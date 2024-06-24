@@ -1,0 +1,31 @@
+
+==============VEICULO==============
+Placa do veiculo: a
+Marca do Veiculo: a
+Modelo do Veiculo: a
+Tipo do Veiculo: a
+Nome do Proprietario: a
+===================================
+
+===============VAGAS===============
+Nome da Vaga: A1
+Carro 30-R$/H
+Dono da Vaga: 
+===================================
+
+==============HORARIO==============
+Tempo de Estadia: 10
+===================================
+
+=============ADCIONAIS=============
+Lavagem = 50R$
+Polimento = 100R$
+Troca de Oleo = 100R$
+===================================
+
+===============TOTAL===============
+Valor de estadia: 300R$
+Valor de Adicionais: 250R$
+===================================
+Total: 550R$
+===================================
