@@ -6,7 +6,7 @@ int des, i, opc;
 des = 0;
 
 
-while (des != 5){
+while (des != 6){
     printf("=============================\n");
     printf("            REMOVER          \n");
     printf("=============================\n");
@@ -14,12 +14,11 @@ while (des != 5){
     printf("[1] Veículo\n");
     printf("[2] Vaga\n");
     printf("[3] Entrada/Saída\n");
-    printf("[4] Usuário\n");
+    printf("[4] Carrinho de Compras\n");
     printf("[5] Sair\n");
     printf("=============================\n");
     scanf("%i", &des);
-        switch (des)
-                {
+            switch (des){
                 case 1:
                     printf("Selecione o numero do veiculo que deseja excluir \n");
                     for(i=0;i<5;i++){
@@ -110,13 +109,33 @@ while (des != 5){
                     
                 break;
                 case 4:
-                            printf("AGUARDANDO RAFAEL"); 
+                    printf("Selecione o numero do Carrinho de Compras que deseja excluir \n");
+                    for(i=0;i<5;i++){
+                    printf("Carrinho n%i \n", i);
+                    printf("ID: ");
+                    printf("%i\n",Carrinho[i].id_carrinho);
+                    }
+                    scanf("%i", &opc);
+                    switch (opc){
+                    case 1:
+                        Carrinho[opc].ativo = 0;
+                        break;
+                    case 2:
+                        Carrinho[opc].ativo = 0;
+                        break;
+                    case 3:
+                        Carrinho[opc].ativo = 0;
+                        break;
+                    case 4:
+                        Carrinho[opc].ativo = 0;
+                        break;
+                    case 5:
+                        Carrinho[opc].ativo = 0;
+                        break;
+                    }
                 break;
-                default:
-                    printf("Algo deu ERRADO!\n");
-                    system("Pause");
-                break;
-                }
-}
+            }
+        
+    }
     return 0;
 }

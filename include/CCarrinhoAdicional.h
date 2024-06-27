@@ -15,7 +15,6 @@ int criarCarrinho(){
         printf("Insira o id que deseja ocupar\n1 a 5\n");
         scanf("%i",&i);
         i=i-1;
-        printf("%i-Carrinho\n",i+1);
         printf("Confirme o ID\n");
         scanf("%i",&Carrinho[i].id_carrinho);
         printf("Deseja Lavagem durante o periodo que permanecera ao local R$50\n0-Nao\n1-Sim\n");

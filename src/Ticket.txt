@@ -1,16 +1,18 @@
 
 ==============VEICULO==============
-Placa do veiculo: a
-Marca do Veiculo: a
-Modelo do Veiculo: a
-Tipo do Veiculo: a
-Nome do Proprietario: a
+Placa do veiculo: ABCDE
+Marca do Veiculo: fiat
+Modelo do Veiculo: UNO
+Tipo do Veiculo: carro
+Nome do Proprietario: Luis
 ===================================
 
 ===============VAGAS===============
-Nome da Vaga: A1
+Nome da Vaga: vaga teste
+
 Carro 30-R$/H
-Dono da Vaga: 
+Dono da Vaga: Luis da silva
+
 ===================================
 
 ==============HORARIO==============
@@ -19,13 +21,14 @@ Tempo de Estadia: 10
 
 =============ADCIONAIS=============
 Lavagem = 50R$
-Polimento = 100R$
-Troca de Oleo = 100R$
 ===================================
 
 ===============TOTAL===============
 Valor de estadia: 300R$
-Valor de Adicionais: 250R$
+Valor de Adicionais: 50R$
 ===================================
-Total: 550R$
+Total: 350R$
 ===================================
+
+
+

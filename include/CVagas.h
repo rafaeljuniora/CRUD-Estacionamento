@@ -5,38 +5,14 @@ struct Vagas{
     int id_vaga;
     char nome_vaga[20];
     char tipo_vaga;
-    char dono_vaga[20]; 
+    char dono_vaga[50]; 
     int ativo;
 }cadastroVaga[5];
 
-void update_eliza() {
-    int id, encontrado = 0;
-    printf("Insira o ID da vaga que deseja atualizar:");
-    scanf("%i", &id);
 
-    for (int i = 0; i < 5; i++) {
-        if (cadastroVaga[i].id_vaga == id) {
-            encontrado = 1;
-            printf("Atualizando a vaga com ID %i:\n", id);
-            printf("Insira um novo nome para a vaga:\n");
-            fflush(stdin);
-            fgets(cadastroVaga[i].nome_vaga, 20, stdin);
-            printf("Insira o novo tipo da vaga (A - Carro / B - Moto):\n");
-            scanf(" %c", &cadastroVaga[i].tipo_vaga);
-            printf("Qual dos usuários acima é o dono da respectiva vaga:\n");
-            fflush(stdin); 
-            fgets(cadastroVaga[i].dono_vaga, 20, stdin); 
-            break;
-        }
-    }
-
-    if (!encontrado) {
-        printf("Vaga com ID %d não encontrada.\n",id);
-    }
-}
 
 int criarVaga(){
-    int i,numero_vaga,FA1=0,FA2=0,FA3=0,FA4=0,FA5=0,FB6=0,FB7=0,FB8=0,FB9=0,FB0=0;
+    int i,j,numero_vaga,FA1=0,FA2=0,FA3=0,FA4=0,FA5=0,FB6=0,FB7=0,FB8=0,FB9=0,FB0=0;
     char respVagas;
     do{
         printf("Insira o id que deseja ocupar\n1 a 5\n");
@@ -88,8 +64,8 @@ int criarVaga(){
             gets(cadastroVaga[i].nome_vaga);
             printf("Insira o Tipo da Vaga\nTipo-A(Carro)R$30\nTipo-B(Moto)R$15\n");
             scanf(" %c", &cadastroVaga[i].tipo_vaga);
-            for(i=0;i<5;i++){
-                printf("%s\n",cadastroVeiculo[i].proprietario_veiculo);
+            for(j=0;j<5;j++){
+                printf("%s\n",cadastroVeiculo[j].proprietario_veiculo);
             }
             printf("Qual dos usuarios acima eh o dono da respectiva vaga\n");
             fflush(stdin);
@@ -104,8 +80,8 @@ int criarVaga(){
             gets(cadastroVaga[i].nome_vaga);
             printf("Insira o Tipo da Vaga\nTipo-A(Carro)R$30\nTipo-B(Moto)R$15\n");
             scanf("  %c", &cadastroVaga[i].tipo_vaga);
-            for(i=0;i<5;i++){
-                printf("%s\n",cadastroVeiculo[i].proprietario_veiculo);
+            for(j=0;j<5;j++){
+                printf("%s\n",cadastroVeiculo[j].proprietario_veiculo);
             }
             printf("Qual dos usuarios acima eh o dono da respectiva vaga\n");
             fflush(stdin);
@@ -120,8 +96,8 @@ int criarVaga(){
             gets(cadastroVaga[i].nome_vaga);
             printf("Insira o Tipo da Vaga\nTipo-A(Carro)R$30\nTipo-B(Moto)R$15\n");
             scanf(" %c", &cadastroVaga[i].tipo_vaga);
-            for(i=0;i<5;i++){
-                printf("%s\n",cadastroVeiculo[i].proprietario_veiculo);
+            for(j=0;j<5;j++){
+                printf("%s\n",cadastroVeiculo[j].proprietario_veiculo);
             }
             printf("Qual dos usuarios acima eh o dono da respectiva vaga\n");
             fflush(stdin);
@@ -136,8 +112,8 @@ int criarVaga(){
             gets(cadastroVaga[i].nome_vaga);
             printf("Insira o Tipo da Vaga\nTipo-A(Carro)R$30\nTipo-B(Moto)R$15\n");
             scanf(" %c", &cadastroVaga[i].tipo_vaga);
-            for(i=0;i<5;i++){
-                printf("%s\n",cadastroVeiculo[i].proprietario_veiculo);
+            for(j=0;j<5;j++){
+                printf("%s\n",cadastroVeiculo[j].proprietario_veiculo);
             }
             printf("Qual dos usuarios acima eh o dono da respectiva vaga\n");
             fflush(stdin);
@@ -152,8 +128,8 @@ int criarVaga(){
             gets(cadastroVaga[i].nome_vaga);
             printf("Insira o Tipo da Vaga\nTipo-A(Carro)R$30\nTipo-B(Moto)R$15\n");
             scanf(" %c", &cadastroVaga[i].tipo_vaga);
-            for(i=0;i<5;i++){
-                printf("%s\n",cadastroVeiculo[i].proprietario_veiculo);
+            for(j=0;j<5;j++){
+                printf("%s\n",cadastroVeiculo[j].proprietario_veiculo);
             }
             printf("Qual dos usuarios acima eh o dono da respectiva vaga\n");
             fflush(stdin);
@@ -168,8 +144,8 @@ int criarVaga(){
             gets(cadastroVaga[i].nome_vaga);
             printf("Insira o Tipo da Vaga\nTipo-A(Carro)R$30\nTipo-B(Moto)R$15\n");
             scanf(" %c", &cadastroVaga[i].tipo_vaga);
-            for(i=0;i<5;i++){
-                printf("%s\n",cadastroVeiculo[i].proprietario_veiculo);
+            for(j=0;j<5;j++){
+                printf("%s\n",cadastroVeiculo[j].proprietario_veiculo);
             }
             printf("Qual dos usuarios acima eh o dono da respectiva vaga\n");
             fflush(stdin);
@@ -184,8 +160,8 @@ int criarVaga(){
             gets(cadastroVaga[i].nome_vaga);
             printf("Insira o Tipo da Vaga\nTipo-A(Carro)R$30\nTipo-B(Moto)R$15\n");
             scanf(" %c", &cadastroVaga[i].tipo_vaga);
-            for(i=0;i<5;i++){
-                printf("%s\n",cadastroVeiculo[i].proprietario_veiculo);
+            for(j=0;j<5;j++){
+                printf("%s\n",cadastroVeiculo[j].proprietario_veiculo);
             }
             printf("Qual dos usuarios acima eh o dono da respectiva vaga\n");
             fflush(stdin);
@@ -200,8 +176,8 @@ int criarVaga(){
             gets(cadastroVaga[i].nome_vaga);
             printf("Insira o Tipo da Vaga\nTipo-A(Carro)R$30\nTipo-B(Moto)R$15\n");
             scanf(" %c", &cadastroVaga[i].tipo_vaga);
-            for(i=0;i<5;i++){
-                printf("%s\n",cadastroVeiculo[i].proprietario_veiculo);
+            for(j=0;j<5;j++){
+                printf("%s\n",cadastroVeiculo[j].proprietario_veiculo);
             }
             printf("Qual dos usuarios acima eh o dono da respectiva vaga\n");
             fflush(stdin);
@@ -216,8 +192,8 @@ int criarVaga(){
             gets(cadastroVaga[i].nome_vaga);
             printf("Insira o Tipo da Vaga\nTipo-A(Carro)R$30\nTipo-B(Moto)R$15\n");
             scanf(" %c", &cadastroVaga[i].tipo_vaga);
-            for(i=0;i<5;i++){
-                printf("%s\n",cadastroVeiculo[i].proprietario_veiculo);
+            for(j=0;j<5;j++){
+                printf("%s\n",cadastroVeiculo[j].proprietario_veiculo);
             }
             printf("Qual dos usuarios acima eh o dono da respectiva vaga\n");
             fflush(stdin);
@@ -232,8 +208,8 @@ int criarVaga(){
             gets(cadastroVaga[i].nome_vaga);
             printf("Insira o Tipo da Vaga\nTipo-A(Carro)R$30\nTipo-B(Moto)R$15\n");
             scanf(" %c", &cadastroVaga[i].tipo_vaga);
-            for(i=0;i<5;i++){
-                printf("%s\n",cadastroVeiculo[i].proprietario_veiculo);
+            for(j=0;j<5;j++){
+                printf("%s\n",cadastroVeiculo[j].proprietario_veiculo);
             }
             printf("Qual dos usuarios acima eh o dono da respectiva vaga\n");
             fflush(stdin);

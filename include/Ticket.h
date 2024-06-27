@@ -3,19 +3,25 @@
 
 int funcTicket() {
     int valor_total, valor_vaga, valor_hora, valor_carrinho, i;
+    char respticket;
     
     FILE *file;
     file = fopen("Ticket.txt", "w");
+    do{
+        printf("Insira o id do Ticket\n1 a 5\n");
+        scanf("%i",&i);
+        i=i-1;
+
     if (file == NULL) {
         printf("ERRO COM O ARQUIVO TXT\n");
     } else {
         printf("Sucesso ao Criar Ticket\n");
     }
     
-    for (i = 0; i < 5; i++) {
+    
         if (cadastroVeiculo[i].id_veiculo == cadastroVaga[i].id_vaga &&
             cadastroVaga[i].id_vaga == cadastroEntradaSaida[i].id_transacao &&
-            cadastroEntradaSaida[i].id_transacao==Carrinho[i].id_carrinho) {
+            cadastroEntradaSaida[i].id_transacao==Carrinho[i].id_carrinho && Carrinho[i].id_carrinho != 0) {
 
             fprintf(file, "\n==============VEICULO==============\n");
             fprintf(file, "Placa do veiculo: %s\n", cadastroVeiculo[i].placa_veiculo);
@@ -62,11 +68,12 @@ int funcTicket() {
             fprintf(file, "Valor de Adicionais: %dR$\n", valor_carrinho);
             fprintf(file, "===================================\n");
             fprintf(file, "Total: %dR$\n", valor_total);
-            fprintf(file, "===================================\n");
+            fprintf(file, "===================================\n\n\n\n");
             printf("Teste\n");
         }
-    }
-
+        printf("Deseja Imprimir mais um Ticket\nS/N\n");
+        scanf(" %s", &respticket);
+    }while(respticket=='s'||respticket=='S');
     fclose(file);
     return 0;
 }
